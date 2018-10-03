@@ -25,7 +25,7 @@ MongoClient.connect('mongodb://localhost:27017/ToDoApp', { useNewUrlParser: true
 
   db.collection('Users').find({name:'Franz'}).toArray().then((docs) => {
     console.log('Users with name: Franz');
-    console.log(JSON.stringify(docs, undefined, 2));    
+    console.log(JSON.stringify(docs, undefined, 2));
   }, (err) => {
     console.log('Unable to fetch user name');
   });
